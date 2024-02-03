@@ -51,7 +51,7 @@ io.on('connection', (socket: Socket) => {
   // Broadcast a welcome message to the connected client
   socket.emit('serverMessage', { content: 'Welcome to the chat!', sender: 'System' });
 
-  // Example: Broadcast a message to all connected clients
+  
   socket.on('clientMessage', (data: any) => {
     console.log('Received message from client:', data);
 
